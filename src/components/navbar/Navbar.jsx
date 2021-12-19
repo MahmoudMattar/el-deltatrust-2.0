@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/deltaTrust.png";
+import LanguageSelect from "../../../src/LanguageSelect";
+import { useTranslation, getI18n } from "react-i18next";
 import "./navbar.css";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+  const { language } = getI18n();
+
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -14,25 +19,26 @@ const Navbar = () => {
         </div>
         <div className="gpt3__navbar-links_container">
           <p>
-            <a href="#home">Home</a>
+            <a href="#home">{t("Home")}</a>
           </p>
           <p>
-            <a href="#wgpt3">What is GPT3?</a>
+            <a href="#wgpt3"> {t("What is El-Delta Trust?")}</a>
           </p>
           <p>
-            <a href="#possibility">Open AI</a>
+            <a href="#possibility">{t("Join us")}</a>
           </p>
           <p>
-            <a href="#features">Case Studies</a>
+            <a href="#features">{t("Case Studies")} </a>
           </p>
           <p>
-            <a href="#blog">Library</a>
+            <a href="#blog"> {t("Service")}</a>
           </p>
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
+        <div className="language-select">
+          <LanguageSelect />
+        </div>
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
@@ -49,27 +55,31 @@ const Navbar = () => {
           />
         )}
         {toggleMenu && (
-          <div className="gpt3__navbar-menu_container scale-up-center">
+          <div
+            className="gpt3__navbar-menu_container scale-up-center"
+            style={language === "ar" ? { left: "0" } : { right: "0" }}
+          >
             <div className="gpt3__navbar-menu_container-links">
               <p>
-                <a href="#home">Home</a>
+                <a href="#home">{t("Home")}</a>
               </p>
               <p>
-                <a href="#wgpt3">What is GPT3?</a>
+                <a href="#wgpt3"> {t("What is El-Delta Trust?")}</a>
               </p>
               <p>
-                <a href="#possibility">Open AI</a>
+                <a href="#possibility">{t("Join us")}</a>
               </p>
               <p>
-                <a href="#features">Case Studies</a>
+                <a href="#features">{t("Case Studies")} </a>
               </p>
               <p>
-                <a href="#blog">Library</a>
+                <a href="#blog"> {t("Service")}</a>
               </p>
             </div>
             <div className="gpt3__navbar-menu_container-links-sign">
-              <p>Sign in</p>
-              <button type="button">Sign up</button>
+              <div className="language-select">
+                <LanguageSelect />
+              </div>
             </div>
           </div>
         )}

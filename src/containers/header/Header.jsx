@@ -1,35 +1,65 @@
 import React from "react";
 import people from "../../assets/people.png";
+import { useTranslation } from "react-i18next";
 import ai from "../../assets/ai.png";
 import "./header.css";
 
-const Header = () => (
-  <div className="gpt3__header section__padding" id="home">
-    <div className="gpt3__header-content">
-      <h1 className="gradient__text">
-        Let&apos;s Build Something amazing with GPT-3 OpenAI
-      </h1>
-      <p>
-        Yet bed any for travelling assistancfe indulgence unpleasing. Not
-        thoughts all exercise blessing. Indulgence way everything joy alteration
-        boisterous the attachment. Party we years to order allow asked of.
-      </p>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var mainEmailBtnSub = document.getElementById("mainEmailBtnSub");
+  var popup = document.getElementById("myPopup");
 
-      <div className="gpt3__header-content__input">
-        <input type="email" placeholder="Your Email Address" />
-        <button type="button">Get Started</button>
+  if (
+    /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mainEmailBtnSub.value)
+  ) {
+    popup.innerText = "Thanks for subscribe..";
+    popup.classList.toggle("show");
+    setTimeout(() => {
+      popup.classList.toggle("show");
+    }, 2000);
+    return true;
+  }
+  popup.innerText = "You have entered an invalid email address!";
+  popup.classList.toggle("show");
+  setTimeout(() => {
+    popup.classList.toggle("show");
+  }, 3000);
+
+  return false;
+}
+
+const Header = () => {
+  const { t } = useTranslation();
+  return (
+    <div className="gpt3__header section__padding" id="home">
+      <div className="gpt3__header-content">
+        <h1 className="gradient__text">{t("Header__title")}</h1>
+        <p> {t("Header__subTitle")}</p>
+
+        <div className="gpt3__header-content__input popup">
+          <span className="popuptext" id="myPopup"></span>
+          <input
+            id="mainEmailBtnSub"
+            type="email"
+            placeholder="Your Email Address"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          <button type="button" onClick={myFunction}>
+            {t("Get Started")}
+          </button>
+        </div>
+
+        <div className="gpt3__header-content__people">
+          <img src={people} alt="people" />
+          <p>{t("Header__footer")}</p>
+        </div>
       </div>
 
-      <div className="gpt3__header-content__people">
-        <img src={people} alt="people" />
-        <p>1,600 people requested access a visit in last 24 hours</p>
+      <div className="gpt3__header-image">
+        <img src={ai} alt="ai" />
       </div>
     </div>
-
-    <div className="gpt3__header-image">
-      <img src={ai} alt="ai" />
-    </div>
-  </div>
-);
+  );
+};
 
 export default Header;

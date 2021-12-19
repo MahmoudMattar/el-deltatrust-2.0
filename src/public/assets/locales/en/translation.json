@@ -1,0 +1,34 @@
+{
+  "select_language": "Select Language",
+  "hello_welcome_to_react": "Hello, Welcome to React",
+  "this_is_an_example": "This is an example",
+  "please_enter_name": "Please enter your name",
+  "Header__title": " Now your signatures will be secure when you exchange them with digital signatures",
+  "Header__subTitle": "Using the latest personal protection technology",
+  "Header__footer": "1,600 people requested access a visit in last 24 hours",
+  "main_1": "Delta Trust was launched for (Digital signature), which is used to perform any process that requires proof of identity of the user in banking operations and some e-government services such as signing tax returns, electronic invoice, banks and real estate",
+  "main_2": "The possibilities are beyond your imagination",
+  "main_3": "Explore our Service",
+  "feature_1_header": "Secure Identification",
+  "feature_1_body": "All communications on the documents are encrypted to ensure only authorized people can access the content and that document.",
+
+  "feature_2_header": "Documents Integrity",
+  "feature_2_body": "keeps the authoritative document under control at all times. Any activity on the document (read, sign, etc.) is encrypted to ensure document inalterability. An audit log report is available to all the parties at any time.",
+
+  "feature_3_header": "100% Legal",
+  "feature_3_body": "Documents signed via El-deltaTrust are valid digital signatures under (ITIDA). They also meet the requirements for Digital signatures in most countries.",
+
+  "For individuals": "For individuals",
+  "possibility_1_header": " The citizen goes to one of the Telecom Egypt branches that provides the electronic signature service, with the following documents:",
+  "possibility_1_body": "A copy of a valid national ID card or a valid passport after reviewing the original and completing the required documents",
+
+  "For Companies": "For Companies",
+  "possibility_2_header": " Conditions for obtaining the service:",
+  "possibility_2_body-1": "   1- The presence of a legal representative who has the right to sign for the company or entity",
+  "possibility_2_body-2": "   2- An authorization certified and signed by the bank’s stamp (validity of signature) with which he is dealing to submit and receive the service",
+
+  "article_1_title": "Securing the data inside the documents against alteration or tampering during the process of trading between system users using the encryption method and comparing the fingerprint of the sender’s message with the fingerprint of the future message?",
+  "article_2_title": "Proving the identity of the signer of documents with undeniable accuracy",
+  "article_3_title": "Preventing unauthorized persons from handling electronically signed documents",
+  "article_4_title": "Preparing solutions for electronic bills consistent with local legal conditions "
+}

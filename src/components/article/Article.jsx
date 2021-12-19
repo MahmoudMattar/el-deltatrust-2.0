@@ -8,10 +8,12 @@ const Article = ({ imgUrl, date, text }) => (
     </div>
     <div className="gpt3__blog-container_article-content">
       <div>
-        <p>{date}</p>
-        <h3 onClick={(e) => console.log(e)}>{text}</h3>
+        {/* <p>{date}</p> */}
+        <h3 onClick={(e) => console.log(e)} style={{ margin: "0 auto" }}>
+          {text}
+        </h3>
       </div>
-      <p>Read Full Article</p>
+      {/* <p>Read Full Article</p> */}
     </div>
   </div>
 );
