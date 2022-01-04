@@ -22,13 +22,13 @@ const Navbar = () => {
             <a href="#home">{t("Home")}</a>
           </p>
           <p>
-            <a href="#wgpt3"> {t("What is El-Delta Trust?")}</a>
+            <a href="#wgpt3"> {t("About")}</a>
           </p>
           <p>
             <a href="#possibility">{t("Join us")}</a>
           </p>
           <p>
-            <a href="#features">{t("Case Studies")} </a>
+            <a href="#features">{t("Services")} </a>
           </p>
           <p>
             <a href="#blog"> {t("Service")}</a>

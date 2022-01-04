@@ -8,6 +8,7 @@ import {
   WhatEldeltatrust,
 } from "./containers";
 import { CTA, Brand, Navbar } from "./components";
+import PriceList from "./components/priceList/PriceList";
 import "./App.css";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
       <Features />
       <Possibility />
       <CTA />
+      <PriceList />
       <Blog />
       <Footer />
     </div>

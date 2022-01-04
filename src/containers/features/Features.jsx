@@ -1,41 +1,52 @@
 import React from "react";
 import Feature from "../../components/feature/Feature";
+import { useTranslation, getI18n } from "react-i18next";
 import "./features.css";
 
 const featuresData = [
   {
-    title: "Improving end distrusts instantly",
-    text: "From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.",
+    title: "Registration",
+    text: "Ensuring the security and confidentiality of private data",
   },
   {
-    title: "Become the tended active",
-    text: "Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.",
+    title: "E-Selling",
+    text: "E-commerce, software distribution, financial transactions, and other situations that rely on forgery and tampering detection techniques are some of the examples where digital signatures can be misused",
   },
   {
-    title: "Message or am nothing",
-    text: "Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.",
+    title: "USB token for Digital signature Certificate (DSC)",
+    text: "The USB token has unique in-built software that enables users to identify and open digital signatures",
   },
   {
-    title: "Really boy law county",
-    text: "Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..",
+    title: "Time Stamp",
+    text: "Time stamping is an important mechanism for the long-term preservation of digital signatures, time sealing of data objects to prove when they were received, protecting copyright and intellectual property and for the provision of notarization services",
   },
 ];
 
-const Features = () => (
-  <div className="gpt3__features section__padding" id="features">
-    <div className="gpt3__features-heading">
-      <h1 className="gradient__text">
-        The Future is Now and You Just Need to Realize It. Step into Future
-        Today. & Make it Happen.
-      </h1>
-      <p>Request Early Access to Get Started</p>
+const Features = () => {
+  const { t } = useTranslation();
+  const { language } = getI18n();
+
+  return (
+    <div className="gpt3__features section__padding" id="features">
+      <div className="gpt3__features-heading">
+        <h1 className="gradient__text">
+          {t(
+            "Get the most of digital cyber security and digitize your signature"
+          )}
+        </h1>
+        <p>{t("Request Early Access to Get Started")}</p>
+      </div>
+      <div className="gpt3__features-container">
+        {featuresData.map((item, index) => (
+          <Feature
+            title={t(item.title)}
+            text={t(item.text)}
+            key={item.title + index}
+          />
+        ))}
+      </div>
     </div>
-    <div className="gpt3__features-container">
-      {featuresData.map((item, index) => (
-        <Feature title={item.title} text={item.text} key={item.title + index} />
-      ))}
-    </div>
-  </div>
-);
+  );
+};
 
 export default Features;

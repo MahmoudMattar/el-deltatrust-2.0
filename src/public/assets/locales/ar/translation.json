@@ -4,8 +4,9 @@
   "this_is_an_example": "هذا مثال",
   "please_enter_name": "من فضلك ادخل الاسم",
   "Home": "الرئيسية",
-  "What is El-Delta Trust?": "من نحن ؟",
+  "About": "من نحن",
   "Join us": "انضم الينا",
+  "Services": "خدماتنا",
   "Service": "تعريف الخدمة",
   "Header__title": "دلوقتي هتأمّن توقيعاتك لما تبدلها بتوقيعات الكترونية  ",
   "Header__subTitle": "باستخدام أحدث تقنيات الحماية الشخصية",
@@ -24,6 +25,17 @@
 
   "feature_3_header": "100٪ قانوني",
   "feature_3_body": "المستندات الموقعة عبر El-deltaTrust هي توقيعات رقمية صالحة بموجب (ITIDA). كما أنها تلبي متطلبات التوقيعات الرقمية في معظم البلدان.",
+
+  "Get the most of digital cyber security and digitize your signature": "احصل على أقصى استفادة من الأمن السيبراني الرقمي وقم برقمنة توقيعك",
+  "Registration": "التسجيل",
+  "Ensuring the security and confidentiality of private data": "ضمان أمن وسرية البيانات الخاصة",
+
+  "E-Selling": "البيع الإلكتروني",
+  "E-commerce, software distribution, financial transactions, and other situations that rely on forgery and tampering detection techniques are some of the examples where digital signatures can be misused": "التجارة الإلكترونية وتوزيع البرامج والمعاملات المالية وغيرها من المواقف التي تعتمد على تقنيات كشف التزوير والعبث هي بعض الأمثلة حيث يمكن إساءة استخدام التوقيعات الرقمية",
+  "USB token for Digital signature Certificate (DSC)": "رمز USB لشهادة التوقيع الرقمي (DSC)",
+  "The USB token has unique in-built software that enables users to identify and open digital signatures": "يحتوي رمز USB على برنامج مدمج فريد يمكّن المستخدمين من تحديد التوقيعات الرقمية وفتحها",
+  "Time Stamp": "الطابع الزمني",
+  "Time stamping is an important mechanism for the long-term preservation of digital signatures, time sealing of data objects to prove when they were received, protecting copyright and intellectual property and for the provision of notarization services": "يعد ختم الوقت آلية مهمة للحفاظ على التوقيعات الرقمية على المدى الطويل ، وإغلاق كائنات البيانات بإحكام وقت استلامها ، وحماية حقوق النشر والملكية الفكرية ولتوفير خدمات التوثيق",
 
   "Procedures for obtaining": "إجراءات الحصول علي",
   "Digital Signature": "التوقيع الالكتروني",
